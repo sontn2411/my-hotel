@@ -1,0 +1,51 @@
+
+
+.wrapperHeader {
+    // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    // position: fixed;
+    width: 100%;
+}
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.headerMenu {
+    ul {
+        display: flex;
+        gap: 1rem;
+
+        li {
+            text-transform: uppercase;
+            font-weight: 700;
+            position: relative;
+            &::after {
+                content:  "";
+                position: absolute;
+                width: 0%;
+                height: 2px;
+                background-color: #58c6f7;
+                bottom: -0.5rem;
+                left: 0%;
+                transition: width 0.4s;
+            }
+            &:hover {
+                &::after {
+                    width: 100%;
+             
+                }
+            }
+        }
+    }
+}
+
+.headerCall a {
+    display: flex;
+    gap: .4rem;
+    
+    &:hover {
+        cursor: pointer;
+        color : #58c6f7;
+    }
+}
