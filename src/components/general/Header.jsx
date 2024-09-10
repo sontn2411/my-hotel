@@ -8,7 +8,6 @@ import { useState } from 'react';
 
 const Header = () => {
 
-    const [hoverCall, setHoverCall] = useState(false)
 
     return (
         <div className="wrapperHeader">
@@ -38,11 +37,8 @@ const Header = () => {
 
                 {/* call */}
                 <div className="headerCall">
-                    <a href='tel:02581234456'
-                        onMouseEnter={() => setHoverCall(true)}
-                        onMouseLeave={() => setHoverCall(false)}
-                    >
-                        {hoverCall ? <img src={iconCallHover} alt="call" width='20px' /> : <img src={iconCall} alt="call" width='20px' />}
+                    <a href='tel:02581234456'>
+                        <img src={iconCallHover} alt="call" width='20px' /> 
                         <span>+84 258 1 234 456 </span>
                     </a>
                 </div>
