@@ -50,6 +50,8 @@ const Slider = () => {
             </span>
           </div>
         )}
+
+        
       </div>
     </div>
   );
