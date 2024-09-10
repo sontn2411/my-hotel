@@ -1,0 +1,16 @@
+
+.silderItem{
+    position: relative;
+
+    .silderItemTitle {
+        position: absolute;
+        // z-index: 1;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        color : white;
+        font-size: 2rem;
+        text-shadow: black 10px 3px 10px;
+        font-weight: 700;
+    }
+}
