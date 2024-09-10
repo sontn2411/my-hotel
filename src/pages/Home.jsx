@@ -1,4 +1,6 @@
+import Footer from "../components/general/Footer"
 import Header from "../components/general/Header"
+import Rooms from "../components/Rooms"
 import Slider from "../components/Slider"
 
 
@@ -7,9 +9,17 @@ const Home = ()=>{
 
     return (
         <>
+        {/* header */}
             <Header />
 
+        {/* slider */}
             <Slider />
+
+        {/* room */}
+        <Rooms />
+
+        {/* footer */}
+        <Footer />
         </>
     )
 }
