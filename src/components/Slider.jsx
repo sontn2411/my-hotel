@@ -6,7 +6,7 @@ import slider2 from "../assets/images/slider2.jpg";
 const data = [
   {
     id: 1,
-    title: "Không gian thoái mát",
+    title: "Không gian thoáng mát",
     img: slider1,
   },
   {
@@ -30,28 +30,48 @@ const Slider = () => {
       });
     }, 5000);
 
-    //clear interval
     return () => clearInterval(interval);
   }, []);
 
+
+  const handleNext = () => {
+    setIndexSlide((prevIndex) => (prevIndex >= data.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const handlePrev = () => {
+    setIndexSlide((prevIndex) => (prevIndex <= 0 ? data.length - 1 : prevIndex - 1));
+  };
+
   return (
     <div className="wrapperSlider">
-      <div className="sliderContainer">
-        {data && (
-          <div className="silderItem">
-            <img
-              src={data[indexSlide].img}
-              alt={data[indexSlide].title}
-              width="100%"
-              height="750px"
-            />
-            <span className="silderItemTitle">
-                {data[indexSlide].title}
-            </span>
+      <div
+        className="sliderContainer"
+        style={{ transform: `translateX(-${indexSlide * 100}%)` }}
+      >
+        {data.map((slide, i) => (
+          <div key={i} className="sliderItem">
+            <img src={slide.img} alt={slide.title} width="100%" height="600px" />
+            <span className="sliderItemTitle">{slide.title}</span>
           </div>
-        )}
+        ))}
+      </div>
 
-        
+
+      <button className="SliderBtnPrev" onClick={handlePrev}>
+          &#10094;
+        </button>
+        <button className="SliderBtnNext" onClick={handleNext}>
+          &#10095;
+        </button>
+
+      <div className="sliderBullet">
+        {Array.from({ length: data.length }).map((_, i) => (
+          <div
+            key={i}
+            className={`bullet ${indexSlide === i ? 'active' : ''}`}
+            onClick={() => setIndexSlide(i)}
+          ></div>
+        ))}
       </div>
     </div>
   );
