@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet"
 import Footer from "../components/generic/Footer"
 import Header from "../components/generic/Header"
 import Rooms from "../components/Rooms"
@@ -9,6 +10,10 @@ const Home = ()=>{
 
     return (
         <>
+        <Helmet>
+                <title>Home</title>
+        </Helmet>
+        
         {/* header */}
             <Header />
 
