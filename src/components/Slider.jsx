@@ -33,7 +33,7 @@ const Slider = () => {
     return () => clearInterval(interval);
   }, []);
 
-
+// handler btn
   const handleNext = () => {
     setIndexSlide((prevIndex) => (prevIndex >= data.length - 1 ? 0 : prevIndex + 1));
   };
@@ -48,6 +48,7 @@ const Slider = () => {
         className="sliderContainer"
         style={{ transform: `translateX(-${indexSlide * 100}%)` }}
       >
+        {/* slider */}
         {data.map((slide, i) => (
           <div key={i} className="sliderItem">
             <img src={slide.img} alt={slide.title} width="100%" height="600px" />
@@ -56,7 +57,7 @@ const Slider = () => {
         ))}
       </div>
 
-
+        {/* btn slider */}
       <button className="SliderBtnPrev" onClick={handlePrev}>
           &#10094;
         </button>
@@ -64,6 +65,7 @@ const Slider = () => {
           &#10095;
         </button>
 
+            {/*slider buller  */}
       <div className="sliderBullet">
         {Array.from({ length: data.length }).map((_, i) => (
           <div
