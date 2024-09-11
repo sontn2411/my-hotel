@@ -13,15 +13,15 @@ function App() {
   return (
     <>
      <Routes>
-        {/* <Route path='/' element={ <Home /> } />
-        <Route path='/about' element={<About />} /> */}
+        <Route path='/' element={ <Home /> } />
+        <Route path='/about' element={<About />} />
 
-        {publicRouters.map (route =>{
+        {/* {publicRouters.map (route =>{
             let Element = route.element
           return (
             <Route path={route.path} element={ <Element />} />
           )
-        })}
+        })} */}
      </Routes>
     </>
   )

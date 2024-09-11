@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
-import './header.scss';
+import '../../scss/generic/header.scss';
 import iconCall from '../../assets/icons/call.png';
 import iconCallHover from '../../assets/icons/callHover.png'
 import logo from '../../assets/logo.svg';
 import { useState } from 'react';
 
 
-const Header = () => {
 
+const Header = () => {
 
     return (
         <div className="wrapperHeader">

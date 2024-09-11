@@ -1,5 +1,5 @@
 import {imgRoom1 } from "../assets"
-import './room.scss'
+import '../scss/components/room.scss'
 
 const data = [{
     id :1 ,
@@ -30,7 +30,7 @@ const Rooms = ()=>{
             <div className="roomContainer">
                 {data.map(r =>{
                     return (
-                        <div className="roomItem">
+                        <div className="roomItem" key={r.id}>
                             <img src={r.img} alt={r.titleRoom}  />
                             <span className="roomItemTitle">{r.titleRoom}</span>
                         </div>
