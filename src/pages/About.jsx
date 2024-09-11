@@ -1,4 +1,4 @@
-import Header from "../components/general/Header"
+import Header from "../components/generic/Header"
 
 const About = ()=>{
 

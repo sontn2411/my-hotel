@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Header from './components/general/Header'
+import Header from './components/generic/Header'
 import './app.scss'
 import Home from './pages/Home'
 import About from './pages/About'
