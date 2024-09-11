@@ -39,6 +39,7 @@
           text-transform: uppercase;
           font-weight: 700;
           position: relative;
+          color : white;
             a {
                 color : white ;
             }
@@ -53,6 +54,7 @@
             transition: width 0.4s;
           }
           &:hover {
+            cursor: pointer;
             &::after {
               width: 100%;
             }
