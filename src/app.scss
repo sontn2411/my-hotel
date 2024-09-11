@@ -6,6 +6,7 @@
 body {
     margin: 0;
     padding : 0;
+    min-height: 200vh;
 
 }
 ul {
@@ -21,3 +22,8 @@ a {
     color : black;
 }
 
+
+.headerMenu {
+    display: flex;
+    gap: 10px;
+}

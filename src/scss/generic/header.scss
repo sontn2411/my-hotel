@@ -31,6 +31,7 @@
     
     }
     .headerMenu {
+      
       ul {
         display: flex;
         gap: 1rem;
@@ -54,10 +55,10 @@
             transition: width 0.4s;
           }
           &:hover {
-            cursor: pointer;
-            &::after {
-              width: 100%;
-            }
+            // cursor: pointer;
+            // &::after {
+            //   width: 100%;
+            // }
           }
         }
       }
@@ -86,3 +87,19 @@
         font-weight: 900;
       }
     }
+
+
+.itemMenuHeader{
+  position: relative;
+  .wrapperMenuHeader{
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    padding-top: 5px;
+    min-width: calc(100% + 30px);
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

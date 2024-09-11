@@ -1,32 +1,38 @@
-import { Helmet } from "react-helmet"
-import Footer from "../components/generic/Footer"
-import Header from "../components/generic/Header"
-import Rooms from "../components/Rooms"
-import Slider from "../components/Slider"
+import { Helmet } from "react-helmet";
+import Footer from "../components/generic/Footer";
+import Header from "../components/generic/Header";
+import Rooms from "../components/Rooms";
+import Slider from "../components/Slider";
+
+const Home = () => {
 
 
-const Home = ()=>{
 
 
-    return (
-        <>
-        <Helmet>
-                <title>Home</title>
-        </Helmet>
-        
-        {/* header */}
-            <Header />
+  return (
+    <>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
 
-        {/* slider */}
-            <Slider />
 
-        {/* room */}
-        <Rooms />
 
-        {/* footer */}
-        <Footer />
-        </>
-    )
-}
+      {/* header */}
+      <Header />
 
-export default Home
+      {/* slider */}
+      <Slider />
+
+      {/* room */}
+      <Rooms />
+
+      {/* list menu */}
+ 
+
+      {/* footer */}
+      {/* <Footer /> */}
+    </>
+  );
+};
+
+export default Home;

@@ -5,33 +5,9 @@ import iconCallHover from "../../assets/icons/callHover.png";
 import logo from "../../assets/logo.svg";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Menu from "./Menu";
 
-const menu = [
-    {
-      id: 1,
-      name: "item 1",
-      children: [
-        { id: 1.1, name: "item 1.1", children: [] },
-        {
-          id: 1.2,
-          name: "item 1.2",
-          children: [
-            { id: 1.21, name: "item 1.2.1 ", children: [] },
-            { id: 1.22, name: "item 1.2.2", children: [] },
-          ],
-        },
-      ],
-    },
-    {
-      id: 2,
-      name: "item 2",
-      children: [
-        { id: 2.1, name: "item 2.1", children: [] },
-        { id: 2.2, name: "item 2.2", children: [] },
-      ],
-    },
-    { id: 3, name: "item 3", children: [] },
-  ];
+
   
 const Header = () => {
   return (
@@ -46,11 +22,13 @@ const Header = () => {
 
         {/* menu */}
         <div className="headerMenu">
-          <ul>
+          {/* <ul>
             <li>Giới thiệu</li>
             <li>Phòng</li>
             <li>Ưu đãi</li>
-          </ul>
+          </ul> */}
+
+          <Menu />
         </div>
 
         {/* call */}
