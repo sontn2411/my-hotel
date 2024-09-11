@@ -6,6 +6,33 @@ import logo from "../../assets/logo.svg";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const menu = [
+    {
+      id: 1,
+      name: "item 1",
+      children: [
+        { id: 1.1, name: "item 1.1", children: [] },
+        {
+          id: 1.2,
+          name: "item 1.2",
+          children: [
+            { id: 1.21, name: "item 1.2.1 ", children: [] },
+            { id: 1.22, name: "item 1.2.2", children: [] },
+          ],
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: "item 2",
+      children: [
+        { id: 2.1, name: "item 2.1", children: [] },
+        { id: 2.2, name: "item 2.2", children: [] },
+      ],
+    },
+    { id: 3, name: "item 3", children: [] },
+  ];
+  
 const Header = () => {
   return (
     <div className="wrapperHeader">
