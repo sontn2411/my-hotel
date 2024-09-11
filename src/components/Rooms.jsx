@@ -28,9 +28,7 @@ const Rooms = ()=>{
     return (
         <div className="wrapperRoom">
             <div className="roomContainer">
-
                 {data.map(r =>{
-
                     return (
                         <div className="roomItem">
                             <img src={r.img} alt={r.titleRoom}  />
