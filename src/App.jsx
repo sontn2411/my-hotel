@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import About from './pages/About'
 import { Routes, Route } from 'react-router-dom'
 import { publicRouters } from './router'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 
@@ -18,7 +20,7 @@ function App() {
         {publicRouters.map (route =>{
             let Element = route.element
           return (
-            <Route path={route.path} element={ <Element />} />
+            <Route key={route.name} path={route.path} element={ <Element />} />
           )
         })}
      </Routes>
