@@ -1,26 +1,24 @@
-
-
-.wrapperRoom {
-    display: flex;
-    justify-content:center;
-    margin: 2rem 0rem; 
+.wrapRoom {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem;
 }
 
-.roomContainer{
-    display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  grid-gap: 3rem; 
+.roomContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
   min-width: 1200px;
 }
 
 .roomItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    .roomItemTitle {
-        font-size: 1.4rem;
-        margin-top: 1rem;
-        margin-bottom: -1.2rem;
-    }
+  .roomItemTitle {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: -1.2rem;
+  }
 }

@@ -5,7 +5,7 @@ import Menu from "./Menu";
 
 const Header = () => {
   return (
-    <div className="wrapperHeader">
+    <div className="wrapHeader">
       <div className="headerContainer">
         {/* logo */}
         <div className="headerLogo">
