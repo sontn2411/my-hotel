@@ -29,7 +29,7 @@
     }
 }
 
-
+// social btn
 .socialHeader { 
   display: flex;
   gap: .4rem;
@@ -48,7 +48,7 @@
 
 
 
-
+//btn booking
 .btnBooking{
   background-color: var(--color4);
   color : var(--color2); 
@@ -76,7 +76,6 @@
 
 
 //sub menu 
-
 .wrapMenuHeader {
   z-index: 2;
   .listMenuHeader {
@@ -91,6 +90,10 @@
       padding : 1rem 0;
       color : var(--color1);
       font-size : 12px;
+      gap:5px;
+      img {
+        height : 32px;
+      }
     }
     .itemMenuHeader {
       &.menuSub {
@@ -163,7 +166,6 @@
             font-weight: 500;
             font-size: 15px;
             transition: 0.3s;
-
           }
         }
       }
