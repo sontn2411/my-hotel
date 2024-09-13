@@ -29,18 +29,18 @@ const Header = () => {
                 </div>
                 <div className="logoHeader">
                   <a href="linkItem">
-                    <img src={logo} className="imagLogo" alt='logo'  />
+                    <img src={logo} className="imagLogo" alt="logo" />
                   </a>
                 </div>
                 <div className="d-flex " style={{ gap: "14px" }}>
                   <div className="socialHeader">
-                    <a href="" className="linkItem"> 
+                    <a href="" className="linkItem">
                       <FaFacebookF />
                     </a>
-                    <a href="" className="linkItem"> 
+                    <a href="" className="linkItem">
                       <FaInstagram />
                     </a>
-                    <a href="" className="linkItem" >
+                    <a href="" className="linkItem">
                       <FaTripadvisor />
                     </a>
                   </div>
@@ -56,8 +56,10 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className=" wrapMenuHeader">
-            <Menu />
+          <div className="wrapMenuMainHeader">
+            <div className=" wrapMenuHeader">
+              <Menu />
+            </div>
           </div>
         </div>
       </div>
@@ -66,4 +68,3 @@ const Header = () => {
 };
 
 export default Header;
-
