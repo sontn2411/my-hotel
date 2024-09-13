@@ -13,13 +13,15 @@ const Home = ()=>{
             <Header />
 
         {/* slider */}
-            <Slider />
+            {/* <Slider /> */}
 
         {/* room */}
-        <Rooms />
+        {/* <Rooms /> */}
 
         {/* footer */}
-        <Footer />
+        {/* <Footer /> */}
+
+
         </>
     )
 }

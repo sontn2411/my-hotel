@@ -5,19 +5,12 @@ const MenuItems = ({ item }) => {
   return (
     <li className={`itemMenuHeader ${item.childrens ? "menuSub" : ""}`}>
       <a href="#" className="linkMenuHeader">
+        <span>
+            <img src={item.icon} alt={item.name}  width='32px'/>
+        </span>
         <span className=""> {item.name} </span>
       </a>
 
-      {/* sub menu */}
-      {item.childrens.length > 0 && (
-        <div className="wrapMenuHeader">
-          <ul className="listMenuHeader">
-            {item.childrens.map((subItem) => (
-              <MenuItems key={subItem.id} item={subItem} />
-            ))}
-          </ul>
-        </div>
-      )}
     </li>
   );
 };

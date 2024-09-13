@@ -1,31 +1,66 @@
 import { Link } from "react-router-dom";
-import '@/scss/components/generic/header.scss'
+import "@/scss/components/generic/header.scss";
 import iconCallHover from "@/assets/icons/callHover.png";
 import Menu from "./Menu";
+import Contact from "./Contact";
+import { logo } from "@/assets";
+import { FaFacebookF, FaInstagram, FaTripadvisor } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { CiMenuBurger } from "react-icons/ci";
+import { GoArrowRight } from "react-icons/go";
+
 
 const Header = () => {
   return (
     <div className="wrapHeader">
-      <div className="headerContainer">
-        {/* logo */}
-        <div className="headerLogo">
-          <Link className="headerLogoLink" to="/">
-            <h3>Logo</h3>
-          </Link>
+      <div className="headerContent">
+        <div className="topHeader">
+          <Contact />
         </div>
 
-        {/* menu */}
-        <div className="wrapMenuMainHeader ">
-          <div className="wrapMenuHeader">
+        <div className="botHeader">
+          <div className="wrapItemHeader">
+            <div className="itemHeader">
+              <div className="container containerItem">
+                <div className="wrapBookingHeader">
+                  <a href="" className="linkItem btnBooking">
+                    Đặt Phòng
+                   
+                      <FaArrowRightLong />
+                  </a>
+                </div>
+                <div className="logoHeader">
+                  <a href="">
+                    <img src={logo} alt="" width="100px" />
+                  </a>
+                </div>
+                <div className="d-flex " style={{ gap: "14px" }}>
+                  <div className="socialHeader">
+                    <span>
+                      <FaFacebookF />
+                    </span>
+                    <span>
+                      <FaInstagram />
+                    </span>
+                    <span>
+                      <FaTripadvisor />
+                    </span>
+                  </div>
+                  <div className="languageHeader">
+                    <span>VI / EN</span>
+                  </div>
+                  <div className="menuBurgerHeader">
+                    <span>
+                      <CiMenuBurger />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" wrapMenuHeader">
             <Menu />
           </div>
-        </div>
-        {/* call */}
-        <div className="headerCall">
-          <a className="headerCallLink" href="tel:02581234456">
-            <img src={iconCallHover} alt="call" width="20px" />
-            <span>+84 258 1 234 456 </span>
-          </a>
         </div>
       </div>
     </div>
