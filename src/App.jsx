@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react'
-import Header from './components/generic/Header'
 import './app.scss'
-import Home from './pages/Home'
-import About from './pages/About'
 import { Routes, Route } from 'react-router-dom'
 import { publicRouters } from './router'
 import 'bootstrap/dist/css/bootstrap.min.css';

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "../../scss/components/generic/header.scss";
-import iconCallHover from "../../assets/icons/callHover.png";
+import "../../../scss/components/generic/header.scss";
+import iconCallHover from "../../../assets/icons/callHover.png";
 import Menu from "./Menu";
 
 const Header = () => {

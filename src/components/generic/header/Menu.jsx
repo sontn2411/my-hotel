@@ -17,11 +17,11 @@ const menuItems = [
         childrens: [
           {
             id: 2.21,
-            name: "about 1.2",
+            name: "about 2.1",
             childrens: [
               {
                 id: 2.211,
-                name: "about 1.2.1",
+                name: "about 2.1.1",
                 childrens: [],
               },
             ],

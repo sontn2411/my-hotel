@@ -1,5 +1,5 @@
 import Footer from "../components/generic/Footer"
-import Header from "../components/generic/Header"
+import Header from "../components/generic/header/Header"
 import Rooms from "../components/Rooms"
 import Slider from "../components/Slider"
 

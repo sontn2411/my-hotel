@@ -1,11 +1,11 @@
-import Header from "../components/generic/Header"
+
 
 const About = ()=>{
 
 
     return (
         <>
-            <Header />
+          
         </>
     )
 }
