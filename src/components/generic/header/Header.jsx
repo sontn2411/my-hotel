@@ -9,7 +9,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { CiMenuBurger } from "react-icons/ci";
 import { GoArrowRight } from "react-icons/go";
 
-
 const Header = () => {
   return (
     <div className="wrapHeader">
@@ -25,26 +24,25 @@ const Header = () => {
                 <div className="wrapBookingHeader">
                   <a href="" className="linkItem btnBooking">
                     Đặt Phòng
-                   
-                      <FaArrowRightLong />
+                    <FaArrowRightLong />
                   </a>
                 </div>
                 <div className="logoHeader">
-                  <a href="">
-                    <img src={logo} alt="" width="100px" />
+                  <a href="linkItem">
+                    <img src={logo} className="imagLogo" alt='logo'  />
                   </a>
                 </div>
                 <div className="d-flex " style={{ gap: "14px" }}>
                   <div className="socialHeader">
-                    <span>
+                    <a href="" className="linkItem"> 
                       <FaFacebookF />
-                    </span>
-                    <span>
+                    </a>
+                    <a href="" className="linkItem"> 
                       <FaInstagram />
-                    </span>
-                    <span>
+                    </a>
+                    <a href="" className="linkItem" >
                       <FaTripadvisor />
-                    </span>
+                    </a>
                   </div>
                   <div className="languageHeader">
                     <span>VI / EN</span>
@@ -68,3 +66,4 @@ const Header = () => {
 };
 
 export default Header;
+

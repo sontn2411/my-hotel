@@ -4,6 +4,7 @@
     --color3 : #58c6f7;
     --color4 : #764e2a ;
     --color5 : #eeeeee ;
+    --color6 : #fedd9d;
 }
 
 body {
@@ -23,27 +24,10 @@ a {
     text-decoration: none !important;
     padding :0 ;
     margin:  0 ;
- 
 }
 
 
-.linkItem{
-    background-color: var(--color4);
-    color : var(--color2); 
-    padding: .2rem 1.6rem .4rem;
-    display: inline-block;
-    text-align: center;
-    gap: .5rem ;
-    font-size: 14px;
-    border : 2px solid var(--color4) ;
-    transition: all;
-    svg {
-        margin-left: 10px;
-    }
-
-    &:hover{
-        color : var(--color4);
-        background-color: var(--color2);
-    }
-   
+.linkItem {
+    color : var(--color1);
+    
 }
