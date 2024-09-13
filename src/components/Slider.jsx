@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import "../scss/components/slider.scss";
-import slider1 from "../assets/images/slider1.jpg";
-import slider2 from "../assets/images/slider2.jpg";
+import "@/scss/components/slider.scss";
+import slider1 from "@/assets/images/slider1.jpg";
+import slider2 from "@/assets/images/slider2.jpg";
 
 const data = [
   {
