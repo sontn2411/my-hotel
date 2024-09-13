@@ -120,7 +120,6 @@
   .wrapMenuHeader {
     position: absolute;
     top: 100%;
-    left: -20px;
     z-index: 991;
     visibility: hidden;
     opacity: 0;
@@ -194,8 +193,7 @@
               bottom: 10px;
               left: 0%;
               transition: width 0.4s;
-            }
-  
+            }  
             &:hover::after {
               width: 100%;
               opacity: 1;
