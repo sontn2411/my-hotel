@@ -25,12 +25,12 @@ const menuDataItems = [
     name: "Phòng nghỉ",
     icon: roomIcon,
     childrens: [
-      // {
-      //   id: 2.1 , name : "room 1" , childrens : [],
-      // } ,
-      // {
-      //   id : 2.2 , name : "room 2" , childrens : []
-      // }
+      {
+        id: 2.1 , name : "room 1" 
+      } ,
+      {
+        id : 2.2 , name : "room 2" 
+      }
     ],
   },
   {
