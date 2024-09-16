@@ -1,7 +1,6 @@
 import "@/scss/components/generic/header.scss";
 import Menu from "./Menu";
 import { logo } from "@/assets";
-
 import { FaArrowRightLong } from "react-icons/fa6";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
@@ -104,7 +103,7 @@ const Header = () => {
                   : "wrapMenuMainHeader"
               }`}
             >
-              {isTabletOrMobile && <div className="wrapMenuHeaderMobile"></div>}
+              {isTabletOrMobile && <div onClick={()=>setShowMenu(false)} className="wrapMenuHeaderMobile"></div>}
               <div className={`wrapMenuHeader  ${isFixed ? "fixed-top" : ""}`}>
                 <Menu />
 

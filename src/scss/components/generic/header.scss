@@ -298,8 +298,9 @@
   
 .wrapMenuMainHeaderMobile {
   > .wrapMenuHeader {
-    position: absolute;
+    position: fixed;
     background-color: var(--color2);
+    top : 12%;
     width: 100%;
     max-width: 300px;
     height: 100%;
