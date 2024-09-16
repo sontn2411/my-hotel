@@ -103,7 +103,7 @@ const Header = () => {
                   : "wrapMenuMainHeader"
               }`}
             >
-              {isTabletOrMobile && <div onClick={()=>setShowMenu(false)} className="wrapMenuHeaderMobile"></div>}
+              {isTabletOrMobile && <div onClick={()=>setShowMenu(false)} className="wrapMenuHeaderMobile "></div>}
               <div className={`wrapMenuHeader  ${isFixed ? "fixed-top" : ""}`}>
                 <Menu />
 
