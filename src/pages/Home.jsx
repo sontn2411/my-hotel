@@ -13,7 +13,7 @@ const Home = ()=>{
             <Header />
 
         {/* slider */}
-        {/* <Slider /> */}
+        <Slider />
 
         {/* room */}
         {/* <Rooms /> */}

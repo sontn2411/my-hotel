@@ -1,41 +1,51 @@
 import "@/scss/components/generic/header.scss";
 import Menu from "./Menu";
 import { logo } from "@/assets";
-import { FaFacebookF, FaInstagram, FaTripadvisor } from "react-icons/fa";
+
 import { FaArrowRightLong } from "react-icons/fa6";
 import { CiMenuBurger } from "react-icons/ci";
+import { IoMdClose } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
-
-
+import { useMediaQuery } from "react-responsive";
+import { useEffect, useState } from "react";
+import Contact from "./Contact";
+import Social from "./Social";
 
 const Header = () => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1200px)" });
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+
+  useEffect(() => {
+    if (showMenu) {
+      document.body.style.overflow = 'hidden'; 
+    } else {
+      document.body.style.overflow = ''; 
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [showMenu, isTabletOrMobile]);
+
+
+
   return (
     <div className="wrapHeader">
       <div className="headerContent">
         {/* contact */}
-        <div className="topHeader">
-          <div className="wrapHeaderContact">
-            <div className="container headerContainerContact">
-              {/* adress */}
-              <a href="" className="linkHeader">
-                <FaLocationDot />
-                <span>
-                  20A Trần Quang Khải, phường Lộc Thọ, thành phố Nha Trang, tỉnh
-                  Khánh Hòa, Việt Nam
-                </span>
-              </a>
-              {/*phone  */}
-              <a href="tel:+123456789" className="linkHeader">
-                <FaPhoneAlt />
-                +84 258 38 33 888
-              </a>
-            </div>
+        {!isTabletOrMobile && (
+          <div className="topHeader">
+            <Contact />
           </div>
-        </div>
+        )}
 
         <div className="botHeader">
-            {/* item header */}
+          {/* item header */}
           <div className="wrapItemHeader">
             <div className="itemHeader">
               <div className="container containerItem">
@@ -50,24 +60,19 @@ const Header = () => {
                     <img src={logo} className="imagLogo" alt="logo" />
                   </a>
                 </div>
-                <div className="itemContent" >
-                  <div className="socialHeader">
-                    <a href="" className="linkItem">
-                      <FaFacebookF />
-                    </a>
-                    <a href="" className="linkItem">
-                      <FaInstagram />
-                    </a>
-                    <a href="" className="linkItem">
-                      <FaTripadvisor />
-                    </a>
-                  </div>
-                  <div className="languageHeader">
-                    <span>VI / EN</span>
-                  </div>
+                <div className="itemContent">
+                  {!isTabletOrMobile && <Social />}
                   <div className="menuBurgerHeader">
-                    <span>
-                      <CiMenuBurger />
+                    <span onClick={handleShowMenu}>
+                      {showMenu ? (
+                        isTabletOrMobile ? (
+                          <IoMdClose />
+                        ) : (
+                          <CiMenuBurger />
+                        )
+                      ) : (
+                        <CiMenuBurger />
+                      )}
                     </span>
                   </div>
                 </div>
@@ -76,11 +81,27 @@ const Header = () => {
           </div>
 
           {/* menu  */}
-          <div className="wrapMenuMainHeader">
-            <div className="wrapMenuHeader">
-              <Menu />
+          {(!isTabletOrMobile || showMenu) && (
+            <div
+              className={`${
+                isTabletOrMobile
+                  ? "wrapMenuMainHeaderMobile"
+                  : "wrapMenuMainHeader"
+              }`}
+            >
+              {isTabletOrMobile && <div className="wrapMenuHeaderMobile"></div>}
+              <div className="wrapMenuHeader">
+                <Menu />
+
+                {isTabletOrMobile && (
+                  <>
+                    <Contact />
+                    <Social />
+                  </>
+                )}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

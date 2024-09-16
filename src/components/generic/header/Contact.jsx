@@ -1,8 +1,12 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
-
+import { useMediaQuery } from "react-responsive";
 
 const Contact = () => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1200px)" });
+
+  
+
   return (
     <div className="wrapHeaderContact">
       <div className="container headerContainerContact">

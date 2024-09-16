@@ -22,6 +22,7 @@
 
 .itemHeader {
   border-bottom:  1px solid var(--color5);
+  background-color: var(--color2);
     .containerItem{
       display: flex;
       justify-content: space-between;
@@ -204,5 +205,102 @@
         }
       }
     }
+  }
+}
+
+
+//responsive
+
+@media (max-width : 1200px) {
+
+  // img
+  .logoHeader{
+    img {
+      height : 60px;
+    }
+  }
+
+  .wrapItemHeader{
+    position: relative;
+    z-index: 9;
+  }
+  .wrapMenuMainHeaderMobile{
+   
+    .wrapMenuHeaderMobile{
+      position: fixed;
+      top: 0;
+      left : 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+
+    }
+  }
+
+  .wrapMenuHeader{
+    position: absolute;
+    background-color: var(--color2);
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    // max-height: 100vh;
+    overflow: scroll;
+  }
+
+
+
+  // sub menu
+  .listMenuHeader {
+    flex-direction: column;
+    .itemMenuHeader {
+      .linkMenuHeader{
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  // contact 
+  .wrapHeaderContact{
+    background-color: var(--color2);
+  
+    .headerContainerContact{
+      flex-direction: column;
+      align-items: start;
+      .linkHeader{
+        color : var(--color7)
+      }
+    }
+    
+  }
+
+  // social 
+  .socialHeader{
+    justify-content: center;
+    padding : 20px 0px ;
+    padding-bottom: 150px;
+    svg {
+      font-size: 26px;
+      &:last-child {
+        font-size: 28px;
+      }
+    }
+  }
+
+
+  .menuBurgerHeader{
+    svg {
+      font-size: 32px;
+    }
+  }
+}
+
+
+
+@media (max-width: 575px) {
+  .btnBooking{
+    font-size: 12px;
+    // padding : 8px 10px;
   }
 }
