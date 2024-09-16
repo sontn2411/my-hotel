@@ -17,12 +17,17 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleShowMenu = () => {
-    setShowMenu(!showMenu);
+    if(isTabletOrMobile){
+      setShowMenu(!showMenu);
+    }
   };
 
-
   useEffect(() => {
-    if (showMenu) {
+
+    if(!isTabletOrMobile) {
+      setShowMenu(false)
+    }
+    if (showMenu ) {
       document.body.style.overflow = 'hidden'; 
     } else {
       document.body.style.overflow = ''; 
@@ -30,7 +35,10 @@ const Header = () => {
     return () => {
       document.body.style.overflow = '';
     };
+
+
   }, [showMenu, isTabletOrMobile]);
+
 
 
 

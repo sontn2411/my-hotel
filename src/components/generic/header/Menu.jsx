@@ -16,8 +16,8 @@ const menuDataItems = [
     name: "Trang chủ",
     icon: homeIcon,
     childrens: [
-      // { id: 1.1, name: "Home 1", childrens: [{ id: 1.11, name: "home 1.1" }] },
-      // { id: 1.2, name: "home 2" },
+      { id: 1.1, name: "Home 1", childrens: [{ id: 1.11, name: "home 1.1" }] },
+      { id: 1.2, name: "home 2" },
     ],
   },
   {

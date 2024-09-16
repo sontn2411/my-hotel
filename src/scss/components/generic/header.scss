@@ -152,6 +152,14 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  @media (max-width : 1200px){
+      &:hover  > .wrapMenuHeader{
+          opacity: 0;
+      }
+  }
+
+
 }
 
 // submenu text
@@ -239,27 +247,11 @@
   }
 
   .wrapMenuHeader{
-    position: absolute;
-    background-color: var(--color2);
-    width: 100%;
-    max-width: 300px;
-    height: 100%;
-    // max-height: 100vh;
-    overflow: scroll;
+  
   }
 
 
 
-  // sub menu
-  .listMenuHeader {
-    flex-direction: column;
-    .itemMenuHeader {
-      .linkMenuHeader{
-        flex-direction: row;
-        justify-content: flex-start;
-      }
-    }
-  }
 
   // contact 
   .wrapHeaderContact{
@@ -279,7 +271,7 @@
   .socialHeader{
     justify-content: center;
     padding : 20px 0px ;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     svg {
       font-size: 26px;
       &:last-child {
@@ -294,6 +286,61 @@
       font-size: 32px;
     }
   }
+
+  // sub menu 
+
+  .menuSub .wrapMenuHeader {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  
+.wrapMenuMainHeaderMobile {
+  > .wrapMenuHeader {
+    position: absolute;
+    background-color: var(--color2);
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    overflow-X: hidden;
+    overflow-y: auto ;
+    > .containerHeader{
+      > .listMenuHeader {
+       
+      }
+    }
+    
+  }
+}
+
+// .menuSub {
+//   .wrapMenuHeader {
+//     position: relative;
+//     left: -12px;
+//     opacity: 0;
+//     display: block;
+//     .listMenuHeader{
+//       background-color: wheat;
+//       color : var(--color1) ;
+//     }
+//   }
+// }
+
+
+
+
+
+
+  .listMenuHeader {
+    flex-direction: column;
+    .itemMenuHeader {
+      .linkMenuHeader{
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+    }
+  }
+
 }
 
 
