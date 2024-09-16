@@ -15,32 +15,39 @@ import Social from "./Social";
 const Header = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1200px)" });
   const [showMenu, setShowMenu] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
 
   const handleShowMenu = () => {
-    if(isTabletOrMobile){
+    if (isTabletOrMobile) {
       setShowMenu(!showMenu);
     }
   };
 
-  useEffect(() => {
+  const handleScroll = () => {
+    const scrollThreshold = isTabletOrMobile ? 10 : 126;
+    setIsFixed(window.scrollY > scrollThreshold);
+  };
 
-    if(!isTabletOrMobile) {
-      setShowMenu(false)
+  useEffect(() => {
+    if (!isTabletOrMobile) {
+      setShowMenu(false);
     }
-    if (showMenu ) {
-      document.body.style.overflow = 'hidden'; 
+    if (showMenu) {
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = ''; 
+      document.body.style.overflow = "";
     }
     return () => {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     };
-
-
   }, [showMenu, isTabletOrMobile]);
 
-
-
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isTabletOrMobile]);
 
   return (
     <div className="wrapHeader">
@@ -54,7 +61,7 @@ const Header = () => {
 
         <div className="botHeader">
           {/* item header */}
-          <div className="wrapItemHeader">
+          <div className={`wrapItemHeader ${isFixed ? "fixed-top" : ""}`}>
             <div className="itemHeader">
               <div className="container containerItem">
                 <div className="wrapBookingHeader">
@@ -98,7 +105,7 @@ const Header = () => {
               }`}
             >
               {isTabletOrMobile && <div className="wrapMenuHeaderMobile"></div>}
-              <div className="wrapMenuHeader">
+              <div className={`wrapMenuHeader  ${isFixed ? "fixed-top" : ""}`}>
                 <Menu />
 
                 {isTabletOrMobile && (
