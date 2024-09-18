@@ -1,4 +1,4 @@
-import { imgRoom1 } from "../assets";
+import  imgRoom1  from "../assets/images/room1.jpg";
 import "../scss/components/room.scss";
 
 const data = [

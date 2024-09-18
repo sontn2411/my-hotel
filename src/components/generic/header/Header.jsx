@@ -1,6 +1,6 @@
 import "@/scss/components/generic/header.scss";
 import Menu from "./Menu";
-import { logo } from "@/assets";
+import  logo  from "../../../assets/logo-adamas-boutique-hotel.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
