@@ -82,29 +82,29 @@
   "room": [
     {
       "id": 1,
-      "title": "Phòng hướng biển",
+      "title": "President Suite Sea View",
       "image": "",
-      "desc_sort": "Lorem Ipsum 1",
-      "desc_long": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "desc_sort": "Đón trọn hướng gió biển",
+      "desc_long": "Đón trọn hướng gió biển với căn phòng có tầm nhìn bao trọn cả thành phố biển Nha Trang, tọa lạc tài tầng 20 của Adamas Boutique Hotel Nha Trang. Đây chính là một sự lựa chọn phù hợp cho những chuyến đi cùng gia đình nhưng lại muốn tận hưởng một không gian riêng với thiết kế 1 phòng khách, 1 bếp và 2 phòng ngủ. President Suite Sea Vierw là một sự kết hợp hoàn hảo giữa lối thiết kế hiện đại và sang trọng, mang đến những cảm xúc tuyệt với khi lưu trú tại đây."
     },
     {
       "id": 2,
-      "title": "Phòng hướng núi",
+      "title": "Studio Suite Sea View",
       "image": "",
-      "desc_sort": "Lorem Ipsum 2",
-      "desc_long": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "desc_sort": "Đầy đủ tiện nghi",
+      "desc_long": "Chính là lựa chọn lý tưởng cho kỳ nghỉ cùng bạn bè và người thương với hệ thống phòng cao cấp và đầy đủ tiện nghi, kèm theo tầm nhìn hướng biển Nha Trang thơ mộng. Đây sẽ là không gian tuyệt vời để bạn thư giãn và kiến tạo ra những kỷ niệm đẹp bên người thân yêu."
     },{
         "id": 3,
-        "title": "Phòng hướng trung tâm",
+        "title": "Triple City View",
         "image": "",
-        "desc_sort": "Lorem Ipsum 3",
-        "desc_long": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        "desc_sort": "Rộng rãi thoáng đãng",
+        "desc_long": "Một chuyến du lịch chữa lành cùng bạn bè trong không gian rộng rãi thoáng đãng của hạng phòng Triple City View sẽ mang lại những trải nghiệm đáng nhớ và ý nghĩa. Với tầm nhìn toàn cảnh thành phố, đây chắc chắn là lựa chọn tuyệt vời cho những chuyến đi 3 người, nơi mọi người có thể cùng nhau chia sẻ những khoảnh khắc đặc biệt."
     },{
         "id": 2,
-        "title": "Phòng hướng thành phố",
+        "title": "Premier Sea View",
         "image": "",
-        "desc_sort": "Lorem Ipsum 4",
-        "desc_long": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        "desc_sort": "Thoải mái và hiện đại",
+        "desc_long": "Một chuyến du lịch chữa lành cùng bạn bè trong không gian rộng rãi thoáng đãng của hạng phòng Triple City View sẽ mang lại những trải nghiệm đáng nhớ và ý nghĩa. Với tầm nhìn toàn cảnh thành phố, đây chắc chắn là lựa chọn tuyệt vời cho những chuyến đi 3 người, nơi mọi người có thể cùng nhau chia sẻ những khoảnh khắc đặc biệt."
     }
   ]
 }
