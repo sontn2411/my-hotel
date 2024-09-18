@@ -15,12 +15,18 @@ const Header = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1200px)" });
   const [showMenu, setShowMenu] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
+  const [isAnimationMenu, setIsAnimationMenu] = useState(false)
+
 
   const handleShowMenu = () => {
-    if (isTabletOrMobile) {
-      setShowMenu(!showMenu);
+    setIsAnimationMenu(!isAnimationMenu)
+    if(showMenu){
+      setTimeout(()=>setShowMenu(false) ,500)
+    }else {
+      setShowMenu(true)
     }
   };
+
 
   const handleScroll = () => {
     const scrollThreshold = isTabletOrMobile ? 10 : 126;
@@ -47,6 +53,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [isTabletOrMobile]);
+
 
   return (
     <div className="wrapHeader">
@@ -103,10 +110,9 @@ const Header = () => {
                   : "wrapMenuMainHeader"
               }`}
             >
-              {isTabletOrMobile && <div onClick={()=>setShowMenu(false)} className="wrapMenuHeaderMobile "></div>}
-              <div className={`wrapMenuHeader  ${isFixed ? "fixed-top" : ""}`}>
+              {isTabletOrMobile && <div onClick={handleShowMenu} className={`wrapMenuHeaderMobile ${isAnimationMenu ? "fadeInRight" : "fadeOutRight"}`}></div>}
+              <div className={`wrapMenuHeader ${isTabletOrMobile && (isAnimationMenu   ? "fadeInLeft" : "fadeOutLeft")  }  ${isFixed ? "fixed-top" : ""}`}>
                 <Menu />
-
                 {isTabletOrMobile && (
                   <>
                     <Contact />

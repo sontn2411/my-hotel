@@ -21,14 +21,12 @@ const MenuItems = ({ item }) => {
 
       {item.childrens &&
         (isTabletOrMobile ? (
-          showChilMenu && (
-            <div> 
-                <ul className="" >
-                    {item.childrens.map(subItem =>     <MenuItems key={subItem.id} item={subItem} /> )
-                    }
-                </ul>
-            </div>
-          )
+          <div className={`${showChilMenu ? "d-none" : "d-block"}`}> 
+          <ul className="" >
+              {item.childrens.map(subItem =>     <MenuItems key={subItem.id} item={subItem} /> )
+              }
+          </ul>
+      </div>
         ) : (
           <div className="wrapMenuHeader">
             <ul className="listMenuHeader">

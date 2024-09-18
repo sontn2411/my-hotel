@@ -24,7 +24,7 @@ const Social = () => {
         {social_media.map(item =>{
 
           return (
-            <a href={item.link} className="linkItem">
+            <a key={item.id} href={item.link} className="linkItem">
                 <div  
              dangerouslySetInnerHTML={{ __html: item.icon }} />
             </a>

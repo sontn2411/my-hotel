@@ -39,3 +39,60 @@ a {
     display: flex;
     gap : 20px;
 }
+
+
+// animtion 
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%); 
+    }
+    100% {
+      transform: translateX(0); 
+    }
+  }
+
+@keyframes slideOutToRight {
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(100%); 
+    }
+}
+
+@keyframes slideInToLeft {
+    0% {
+        transform:  translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutToLeft {
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+  
+.fadeOutRight {
+    animation: slideOutToRight 0.5s ease-in-out forwards;
+}
+
+.fadeInRight {
+    animation: slideInFromRight 0.5s ease-in-out forwards;
+}
+  
+
+.fadeInLeft {
+    animation: slideInToLeft 0.5s ease-in-out forwards;
+}
+
+.fadeOutLeft { 
+    animation: slideOutToLeft 0.5s ease-in-out forwards ;
+}

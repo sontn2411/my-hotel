@@ -1,0 +1,707 @@
+{
+    "general": {
+        "title_website": "Khách sạn Sea Soul",
+        "description_website": "Khách sạn Sea Soul",
+        "keywords_website": "Khách sạn Sea Soul",
+        "url_favicon": "images/brand/favicon-sea-soul-hotel.png",
+        "url_website": "https://demo.sweetsoft.vn/sea-soul-hotel/index.html",
+        "created_website": "2024-05-29",
+        "author": "Khách sạn Sea Soul",
+        "url_image_page": "https://demo.sweetsoft.vn/sea-soul-hotel/share.png",
+        "hreflang_website": "vi, en",
+        "logo": "images/brand/logo-sea-soul-hotel.svg"
+    },
+    "language_menu": [
+        {
+            "img": "images/language/vi.svg",
+            "title": "Việt Nam",
+            "text": "VI"
+        },
+        {
+            "img": "images/language/en.svg",
+            "title": "English",
+            "text": "EN"
+        }
+    ],
+    "social": [
+        {
+            "link": "javascript:void(0);",
+            "title": "Facebook",
+            "target": "_self",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'><path d='M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z'/></svg>"
+        },
+        {
+            "link": "javascript:void(0);",
+            "title": "Instagram",
+            "target": "_self",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='16' width='14' viewBox='0 0 448 512'><path d='M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z'/></svg>"
+        },
+        {
+            "link": "javascript:void(0);",
+            "title": "Tripadvisor",
+            "target": "_self",
+            "icon": "<svg width='50' height='33' viewBox='0 0 50 33' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M25.07 0.74219C19.5256 0.74219 13.9853 2.37022 9.19461 5.62837H0.138672L4.21499 10.0619C2.35771 11.754 1.05572 13.9684 0.480061 16.4141C-0.0955995 18.8598 0.0819929 21.4224 0.989508 23.7653C1.89702 26.1083 3.49202 28.1219 5.56495 29.5417C7.63789 30.9614 10.0918 31.721 12.6043 31.7205C15.7437 31.7232 18.7675 30.536 21.0664 28.398L25.0576 32.7422L29.0487 28.4021C31.3462 30.5379 34.3677 31.7236 37.5045 31.7205C40.8083 31.7205 43.9767 30.4084 46.3132 28.0727C48.6497 25.737 49.9629 22.569 49.964 19.2652C49.9659 17.5326 49.6054 15.8187 48.9055 14.2337C48.2056 12.6487 47.1819 11.2277 45.9001 10.0619L49.9764 5.62837H40.9433C36.2631 2.44232 30.7318 0.739658 25.07 0.74219ZM25.0576 4.81227C28.2368 4.81227 31.4181 5.44148 34.4104 6.68742C29.0923 8.72246 25.0576 13.482 25.0576 19.0264C25.0576 13.4799 21.0248 8.72246 15.7047 6.68742C18.6682 5.45225 21.8469 4.81359 25.0576 4.81227ZM12.6023 10.8385C13.7092 10.8385 14.8052 11.0565 15.8278 11.4801C16.8505 11.9037 17.7796 12.5245 18.5623 13.3072C19.345 14.0899 19.9659 15.0191 20.3895 16.0417C20.8131 17.0644 21.0311 18.1604 21.0311 19.2673C21.0311 20.3742 20.8131 21.4702 20.3895 22.4929C19.9659 23.5155 19.345 24.4447 18.5623 25.2274C17.7796 26.0101 16.8505 26.6309 15.8278 27.0545C14.8052 27.4781 13.7092 27.6961 12.6023 27.6961C10.3668 27.6961 8.22291 26.8081 6.6422 25.2274C5.06149 23.6467 4.17345 21.5028 4.17345 19.2673C4.17345 17.0318 5.06149 14.8879 6.6422 13.3072C8.22291 11.7265 10.3668 10.8385 12.6023 10.8385ZM37.5045 10.8426C38.611 10.8422 39.7067 11.0598 40.7291 11.4828C41.7516 11.9059 42.6806 12.5262 43.4633 13.3083C44.246 14.0904 44.867 15.019 45.2908 16.0411C45.7146 17.0632 45.9329 18.1587 45.9333 19.2652C45.9338 20.3717 45.7162 21.4674 45.2932 22.4898C44.8701 23.5122 44.2498 24.4413 43.4677 25.224C42.6856 26.0067 41.757 26.6277 40.7349 27.0515C39.7128 27.4753 38.6172 27.6936 37.5108 27.694C35.2761 27.6949 33.1327 26.808 31.552 25.2284C29.9713 23.6489 29.0828 21.5061 29.082 19.2715C29.0811 17.0368 29.968 14.8934 31.5476 13.3127C33.1271 11.732 35.2699 10.8435 37.5045 10.8426ZM12.6023 14.8504C11.4303 14.8504 10.3063 15.316 9.4776 16.1447C8.64888 16.9734 8.18332 18.0974 8.18332 19.2694C8.18332 20.4414 8.64888 21.5653 9.4776 22.394C10.3063 23.2228 11.4303 23.6883 12.6023 23.6883C13.7742 23.6883 14.8982 23.2228 15.7269 22.394C16.5556 21.5653 17.0212 20.4414 17.0212 19.2694C17.0212 18.0974 16.5556 16.9734 15.7269 16.1447C14.8982 15.316 13.7742 14.8504 12.6023 14.8504ZM37.5045 14.8504C36.3326 14.8504 35.2086 15.316 34.3799 16.1447C33.5512 16.9734 33.0856 18.0974 33.0856 19.2694C33.0856 20.4414 33.5512 21.5653 34.3799 22.394C35.2086 23.2228 36.3326 23.6883 37.5045 23.6883C38.6765 23.6883 39.8005 23.2228 40.6292 22.394C41.4579 21.5653 41.9235 20.4414 41.9235 19.2694C41.9235 18.0974 41.4579 16.9734 40.6292 16.1447C39.8005 15.316 38.6765 14.8504 37.5045 14.8504Z' fill='#F4F4F4'/></svg>"
+        }
+    ],
+    "contact_info": [ 
+        {
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'><path d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z'/></svg>",
+            "link": "https://maps.app.goo.gl/dP1xbrMieL3dJHEW9",
+            "target": "_blank",
+            "title": "78 Tuệ Tĩnh, Phường Lộc Thọ, Thành phố Nha Trang, Việt Nam",
+            "text": "Địa chỉ"
+        },
+        {
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 512 512'><path d='M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z'/></svg>",
+            "link": "tel:+842582205555",
+            "target": "_self",
+            "title": "+84 258 2205555",
+            "text": "Hotline"
+        },
+        {
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 512 512'><path d='M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z'/></svg>",
+            "link": "mailto:info@seasoulhotel.vn",
+            "target": "_self",
+            "title": "info@seasoulhotel.vn",
+            "text": "Email"
+        },
+        {
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path d='M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z'/></svg>",
+            "link": "javascript:void(0);",
+            "target": "_self",
+            "title": "https://www.seasoulhotel.vn",
+            "text": "Website"
+        }
+    ],
+    "menu_main": [
+        {
+            "title": "Trang chủ",
+            "link": "index.html"
+        },
+        {
+            "title": "Phòng nghỉ", 
+            "link": "ds-phong.html",
+            "children": [
+                {
+                    "title": "Sea Soul Suite",
+                    "link": "phong.html"
+                },
+                {
+                    "title": "Premier Double Sea View",
+                    "link": "phong.html"
+                },
+                {
+                    "title": "Deluxe Twin City View",
+                    "link": "phong.html"
+                },
+                {
+                    "title": "Deluxe Triple City View",
+                    "link": "phong.html"
+                }
+            ]
+        },
+        {
+            "title": "Ẩm thực",
+            "link": "javascript:void(0);"
+        },
+        {
+            "title": "Hội nghị & Sự kiện",
+            "link": "javascript:void(0);"
+        },
+        {
+            "title": "Tiện nghi",
+            "link": "ds-dich-vu.html"
+        },
+        {
+            "title": "Thư viện",
+            "link": "javascript:void(0);",
+            "children": [
+                {
+                    "title": "Hình ảnh",
+                    "link": "ds-hinh-anh.html"
+                },
+                {
+                    "title": "Videos",
+                    "link": "ds-video.html"
+                }
+            ]
+        },
+        {
+            "title": "Ưu đãi",
+            "link": "ds-bai-viet.html"
+        },
+        {
+            "title": "Liên hệ",
+            "link": "lien-he.html"
+        }
+    ],
+    "menu_footer_1": [
+        {
+            "title": "Về chúng tôi",
+            "link": "javascript:void(0);"
+        },
+        {
+            "title": "Sitemap",
+            "link": "javascript:void(0);"
+        },
+        {
+            "title": "Quy định của khách sạn",
+            "link": "javascript:void(0);"
+        },
+        {
+            "title": "Hướng dẫn đặt phòng",
+            "link": "javascript:void(0);"
+        }
+    ],
+    "news": [
+        {
+            "img": "images/news/1.jpg",
+            "title": "Khách sạn Sea Soul - một điểm nhấn giữa lòng thành phố biển Nha Trang",
+            "summary": "Với lối kiến trúc tân cổ điển theo phong cách Châu Âu nhưng không kém phần hiện đại, tinh tế và sang trọng. Khách sạn Sea Soul sẽ là lựa chọn đúng đắn cho du khách mỗi khi đến với Nha Trang dù là mục đích nghỉ dưỡng hay công tác.",
+            "link": "bai-viet.html",
+            "date": "22 Tháng 5, 2024"
+        },
+        {
+            "img": "images/news/2.jpg",
+            "title": "Khuyến mãi hè 2024 - Ưu đãi ngập tràn",
+            "summary": "Khám phá ưu đãi đặc biệt của chúng tôi! Bao gồm các gói tiện ích sang trọng và những trải nghiệm không thể quên. Hãy đặt ngay để tận hưởng sự độc đáo và đẳng cấp tại khách sạn của chúng tôi!",
+            "link": "bai-viet.html",
+            "date": "30 Tháng 4, 2024"
+        },
+        {
+            "img": "images/news/3.jpg",
+            "title": "Buffet sáng chỉ từ 149.000đ/ người",
+            "summary": "Khám phá ưu đãi đặc biệt của chúng tôi! Bao gồm các gói tiện ích sang trọng và những trải nghiệm không thể quên. Hãy đặt ngay để tận hưởng sự độc đáo và đẳng cấp tại khách sạn của chúng tôi!",
+            "link": "bai-viet.html",
+            "date": "02 Tháng 3, 2024"
+        }
+    ],
+    "promotion_hot": [
+        {
+            "img": "images/news/1.jpg",
+            "title": "Giảm 25% cho khách hàng đầu tiên đặt phòng ngày lễ 30/4",
+            "link": "dich-vu.html"
+        },
+        {
+            "img": "images/room/1.jpg",
+            "title": "Ưu đãi hot cho gia đình vào dịp hè này. Đặc biệt hơn với siêu combo",
+            "link": "dich-vu.html"
+        },
+        {
+            "img": "images/room/2.jpg",
+            "title": "Còn đợi chi nữa mà không đặt phòng ngay nào! Nhiều khuyến mãi hấp dẫn đang chờ bạn",
+            "link": "dich-vu.html"
+        },
+        {
+            "img": "images/room/3.jpg",
+            "title": "Vui hè cùng khuyến mãi siêu to khổng lồ của chúng tôi",
+            "link": "dich-vu.html"
+        },
+        {
+            "img": "images/room/4.jpg",
+            "title": "Tưng bừng không khí lễ 30/4 - 1/5, khuyến mãi siêu khủng",
+            "link": "dich-vu.html"
+        },
+        {
+            "img": "images/news/3.jpg",
+            "title": "Hồ bơi, ngắm biển, món ăn ngon. Bạn còn chờ gì nữa với khuyến mãi của chúng tôi",
+            "link": "dich-vu.html"
+        }
+    ],
+    "listGallery": [
+        {
+            "title": "Phòng nghỉ",
+            "img": "images/room/1.jpg"
+        },
+        {
+            "title": "Ẩm thực",
+            "img": "images/banner/nha-hang-1.jpg"
+        },
+        {
+            "title": "Hội nghị & Sự kiện",
+            "img": "images/banner/phong-hop-1.jpg"
+        },
+        {
+            "title": "Nhà hàng",
+            "img": "images/banner/nha-hang-2.jpg"
+        },
+        {
+            "title": "Pool bar",
+            "img": "images/banner/ho-boi-1.jpg"
+        },
+        {
+            "title": "Phòng ăn",
+            "img": "images/banner/phong-an-1.jpg"
+        },
+        {
+            "title": "GYM",
+            "img": "images/banner/gym-1.jpg"
+        },
+        {
+            "title": "Hồ bơi",
+            "img": "images/banner/ho-boi-2.jpg"
+        },
+        {
+            "title": "Phòng làm việc",
+            "img": "images/banner/phong-lam-viec-1.jpg"
+        }
+    ],
+    "detailGallery": [
+        {
+            "title": "Phòng nghỉ",
+            "img": "images/room/1.jpg"
+        },
+        {
+            "title": "Phòng nghỉ",
+            "img": "images/room/2.jpg"
+        },
+        {
+            "title": "Phòng nghỉ",
+            "img": "images/room/3.jpg"
+        },
+        {
+            "title": "Phòng nghỉ",
+            "img": "images/room/4.jpg"
+        },
+        {
+            "title": "Phòng nghỉ",
+            "img": "images/room/5.jpg"
+        },
+        {
+            "title": "Phòng nghỉ",
+            "img": "images/room/6.jpg"
+        },
+        {
+            "title": "Phòng nghỉ",
+            "img": "images/room/7.jpg"
+        },
+        {
+            "title": "Phòng nghỉ",
+            "img": "images/room/8.jpg"
+        },
+        {
+            "title": "Phòng nghỉ",
+            "img": "images/room/9.jpg"
+        }
+    ],
+    "room": [
+        {
+            "img": "images/room/1.jpg",
+            "link": "phong.html",
+            "title_main": "Sea Soul Suite",
+            "des": "Hạng phòng cao cấp nhất của khách sạn, là lựa chọn tuyệt vời dành cho người yêu thích những kiến trúc cổ điển, đẳng cấp với tone màu trắng tinh khiết. Diện tích không gian vượt trội hơn 79m2, thiết kế tách biệt giữa phòng làm việc và phòng ngủ mang lại sự thoải mái khi lưu trú."
+        },
+        {
+            "img": "images/room/2.jpg",
+            "link": "phong.html",
+            "title_main": "Premier Double Sea View",
+            "des": "Với diện tích 36m2, quý khách có thể ngắm cảnh vịnh biển Nha Trang xinh đẹp lúc bình minh hay lấp lánh huyền ảo khi hoàng hôn buông xuống…"
+        },
+        {
+            "img": "images/room/3.jpg",
+            "link": "javascript:void(0);",
+            "title_main": "Deluxe Twin City View",
+            "des": "Nội thất tiện nghi rộng rãi và thiết kế trang nhã mang đến cho quý khách sự thoải mái và ấm áp như đang ở chính ngôi nhà của mình, với view nhìn thẳng ra thành phố Nha Trang nhộn nhịp."
+        },
+        {
+            "img": "images/room/4.jpg",
+            "link": "phong.html",
+            "title_main": "Deluxe Triple City View",
+            "des": "Với không gian rộng rãi, phù hợp cho các thành viên trong gia đình lưu trú cùng nhau thoáng mát và đầy đủ tiện nghi sang trọng theo tiêu chuẩn quốc tế."
+        }
+    ],
+    "utilities": [
+        {
+            "img": "images/banner/ho-boi-1.jpg",
+            "title": "Hồ bơi",
+            "des": "Khách sạn phục vụ khăn tắm và ghế tắm nắng miễn phí cho Quý khách tại hồ bơi. Khách sạn sẽ không chịu trách nhiệm về các tai nạn hoặc rủi ro xảy ra đối với Quý khách khi sử dụng hồ bơi ngoài thời gian quy định.",
+            "link": "dich-vu.html"
+        },
+        {
+            "img": "images/banner/yoga-1.jpg",
+            "title": "Phòng tập Yoga",
+            "des": "Đến với Khách sạn Sea Soul, Quý khách sẽ có những ấn tượng khó quên không chỉ bởi vẻ đẹp về kiến trúc, sự tiện nghi mà còn cả tinh thần phục vụ nhiệt tình, chuyên nghiệp và tận tâm của đội ngũ nhân viên khách sạn",
+            "link": "dich-vu.html"
+        },
+        {
+            "img": "images/banner/sanh-1.jpg",
+            "title": "Sảnh",
+            "des": "Sea Soul sẽ là lựa chọn hoàn hảo cho du khách từ những chuyến nghĩ dưỡng của gia đình, đến những chương trình du lịch nghĩ dưỡng – hội họp của các đoàn khách trong nước và quốc tế.",
+            "link": "dich-vu.html"
+        },
+        {
+            "img": "images/banner/bar-1.jpg",
+            "title": "Bar",
+            "des": "Khách sạn Sea Soul sẽ luôn mang đến những trải nghiệm đáng nhớ cho Quý khách mỗi khi đến với thành phố biển Nha Trang xinh đẹp",
+            "link": "dich-vu.html"
+        }
+    ],
+    "utilities_list": [
+        {
+            "img": "images/banner/ho-boi-1.jpg",
+            "title": "Hồ bơi",
+            "des": "Khách sạn phục vụ khăn tắm và ghế tắm nắng miễn phí cho Quý khách tại hồ bơi. Khách sạn sẽ không chịu trách nhiệm về các tai nạn hoặc rủi ro xảy ra đối với Quý khách khi sử dụng hồ bơi ngoài thời gian quy định.",
+            "link": "dich-vu.html"
+        },
+        {
+            "img": "images/banner/yoga-1.jpg",
+            "title": "Phòng tập Yoga",
+            "des": "Ngoài dịch vụ lưu trú, Khách sạn còn phục vụ đầy đủ các dịch vụ tiện ích nâng cao như không gian tập Yoga",
+            "link": "dich-vu.html"
+        },
+        {
+            "img": "images/banner/ho-boi-2.jpg",
+            "title": "Pool Bar ",
+            "des": "Vị trí: tầng 4 | Thời gian phục vụ: 09:00 – 21:00 | Sức chứa: 40 – 120 khách. Phục vụ các loại nước ép trái cây, cocktails, rượu, bia… và các món ăn nhẹ.",
+            "link": "dich-vu.html"
+        },
+        {
+            "img": "images/banner/gym-1.jpg",
+            "title": "GYM center",
+            "des": "Thời gian phục vụ: 06:00 – 20:00. Phòng tập thể thao đa năng",
+            "link": "dich-vu.html"
+        }
+    ],
+    "utilities_room": [
+        {
+            "image": "images/icons/rong-rai.svg",
+            "title": "Rộng rãi"
+        },
+        {
+            "image": "images/icons/bai-dau-xe.svg",
+            "title": "Bãi đậu xe"
+        },
+        {
+            "image": "images/icons/bon-tam.svg",
+            "title": "Bồn tắm"
+        },
+        {
+            "image": "images/icons/dieu-hoa.svg",
+            "title": "Điều hòa"
+        },
+        {
+            "image": "images/icons/tu-quan-ao.svg",
+            "title": "Tủ quần áo"
+        },
+        {
+            "image": "images/icons/am-dun-nuoc.svg",
+            "title": "Ấm đun nước"
+        },
+        {
+            "image": "images/icons/gym.svg",
+            "title": "GYM"
+        },
+        {
+            "image": "images/icons/wi-fi.svg",
+            "title": "Wi-fi"
+        },
+        {
+            "image": "images/icons/may-giat.svg",
+            "title": "Máy giặt"
+        },
+        {
+            "image": "images/icons/mini-bar.svg",
+            "title": "Mini Bar"
+        },
+        {
+            "image": "images/icons/ket-sat.svg",
+            "title": "Két sắt"
+        },
+        {
+            "image": "images/icons/voi-hoa-sen.svg",
+            "title": "Vòi hoa sen"
+        }
+    ],
+    "testimonial": [
+        {
+            "user_name": "Quoc Huy",
+            "avatar": "images/testimonial/quoc-huy.png",
+            "text": "“Chỗ ở ngay sát bãi biển, rất thuận tiện. Nhân viên thân thiện và nhiệt tình, lần tới sẽ quay lại”"
+        },
+        {
+            "user_name": "Nhi Le",
+            "avatar": "images/testimonial/nhi-le.png",
+            "text": "“Phòng rất đẹp, tiện nghi đầy đủ và sạch sẽ, có view nhìn ra biển để ngắm bình minh”"
+        },
+        {
+            "user_name": "Quoc Huy",
+            "avatar": "images/testimonial/quoc-huy.png",
+            "text": "“Chỗ ở ngay sát bãi biển, rất thuận tiện. Nhân viên thân thiện và nhiệt tình, lần tới sẽ quay lại”"
+        }
+    ],
+    "page_home": {
+        "title_page": "Trang chủ",
+        "description_page": "Trang chủ",
+        "keywords_page": "Trang chủ",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "home"
+        ],
+        "link_js_page": [
+            "lib",
+            "home"
+        ],
+        "slide_main": [
+            {
+                "img": "images/slide-main/1.jpg",
+                "text": "<p>Chào mừng đến với</p><p>Khu Du Lịch Hòn Sỏi</p><p>Đảo Trí Nguyên Nha Trang</p>",
+                "des": "Không gian tuyệt vời, yên tĩnh, sạch sẽ và sang trọng",
+                "link": "javascript:void(0);"
+            },
+            {
+                "img": "images/slide-main/2.jpg",
+                "text": "<p>Không gian tuyệt vời</p><p>Thư giãn cùng không gian yên tĩnh</p><p>Tắm biển trên Hòn Sỏi</p>",
+                "des": "Vô vàn những điều độc đáo, thú vị, rực rỡ, đầy thu hút",
+                "link": "javascript:void(0);"
+            }
+        ]
+    },
+    "page_room_list": {
+        "title_page": "Phòng nghỉ",
+        "description_page": "Phòng nghỉ",
+        "keywords_page": "Phòng nghỉ",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "room-list"
+        ],
+        "link_js_page": [
+            "lib"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/breadcrumb-1.jpg",
+            "menu": []
+        }
+    },
+    "page_room_detail": {
+        "title_page": "Deluxe Triple City View",
+        "description_page": "Deluxe Triple City View",
+        "keywords_page": "Deluxe Triple City View",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "room-detail"
+        ],
+        "link_js_page": [
+            "lib",
+            "room-detail"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/breadcrumb-1.jpg",
+            "menu": [
+                {
+                    "title": "Phòng nghỉ",
+                    "link": "ds-phong.html"
+                }
+            ]
+        },
+        "text_slide": {
+            "link": "javascript:void(0);",
+            "title_main": "President Suite",
+            "title_text": "Rộng rãi và quý phái",
+            "des": "Những Suite hướng biển tại khách sạn mang đến không gian sang trọng và thoải mái. Tận hưởng cảm giác êm dịu của sóng biển từ ban công riêng, và trải nghiệm dịch vụ cao cấp cùng tiện nghi đầy đủ trong không gian lớn và tinh tế."
+        },
+        "img_list": [
+            {
+                "img": "images/deluxe-triple-city-view/1.jpg"
+            },
+            {
+                "img": "images/deluxe-triple-city-view/2.jpg"
+            },
+            {
+                "img": "images/deluxe-triple-city-view/3.jpg"
+            }
+        ]
+    },
+    "page_article_list": {
+        "title_page": "Ưu đãi",
+        "description_page": "Ưu đãi",
+        "keywords_page": "Ưu đãi",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "article-list"
+        ],
+        "link_js_page": [
+            "lib"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/breadcrumb-1.jpg",
+            "menu": []
+        }
+    },
+    "page_article_detail": {
+        "title_page": "Khách sạn Sea Soul - một điểm nhấn giữa lòng thành phố biển Nha Trang",
+        "description_page": "Khách sạn Sea Soul - một điểm nhấn giữa lòng thành phố biển Nha Trang",
+        "keywords_page": "Khách sạn Sea Soul - một điểm nhấn giữa lòng thành phố biển Nha Trang",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "article-detail"
+        ],
+        "link_js_page": [
+            "lib"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/breadcrumb-1.jpg",
+            "menu": [
+                {
+                    "title": "Ưu đãi",
+                    "link": "ds-bai-viet.html"
+                }
+            ]
+        }
+    },
+    "page_service_list": {
+        "title_page": "Tiện nghi",
+        "description_page": "Tiện nghi",
+        "keywords_page": "Tiện nghi",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "service-list"
+        ],
+        "link_js_page": [
+            "lib"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/breadcrumb-1.jpg",
+            "menu": []
+        }
+    },
+    "page_service_detail": {
+        "title_page": "Nhà hàng trung tâm",
+        "description_page": "Nhà hàng trung tâm",
+        "keywords_page": "Nhà hàng trung tâm",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "service-detail"
+        ],
+        "link_js_page": [
+            "lib",
+            "service-detail"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/breadcrumb-1.jpg",
+            "menu": [
+                {
+                    "title": "Tiện nghi",
+                    "link": "ds-dich-vu.html"
+                }
+            ]
+        },
+        "img_list": [
+            {
+                "img": "images/banner/nha-hang-1.jpg"
+            },
+            {
+                "img": "images/banner/nha-hang-2.jpg"
+            },
+            {
+                "img": "images/banner/nha-hang-3.jpg"
+            },
+            {
+                "img": "images/banner/nha-hang-4.jpg"
+            }
+        ]
+    },
+    "page_image_list": {
+        "title_page": "Hình ảnh",
+        "description_page": "Hình ảnh",
+        "keywords_page": "Hình ảnh",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "image-list"
+        ],
+        "link_js_page": [
+            "lib"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/breadcrumb-1.jpg",
+            "menu": []
+        }
+    },
+    "page_image_detail": {
+        "title_page": "Tiện nghi",
+        "description_page": "Tiện nghi",
+        "keywords_page": "Tiện nghi",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "image-detail"
+        ],
+        "link_js_page": [
+            "lib",
+            "image-detail"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/breadcrumb-1.jpg",
+            "menu": [
+                {
+                    "title": "Hình ảnh",
+                    "link": "ds-hinh-anh.html"
+                }
+            ]
+        }
+    },
+    "page_video_list": {
+        "title_page": "Videos",
+        "description_page": "Videos",
+        "keywords_page": "Videos",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "video-list"
+        ],
+        "link_js_page": [
+            "lib"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/breadcrumb-1.jpg",
+            "menu": []
+        }
+    },
+    "page_video_detail": {
+        "title_page": "Tiện nghi",
+        "description_page": "Tiện nghi",
+        "keywords_page": "Tiện nghi",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "video-detail"
+        ],
+        "link_js_page": [
+            "lib",
+            "video-detail"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/breadcrumb-1.jpg",
+            "menu": [
+                {
+                    "title": "Videos",
+                    "link": "ds-video.html"
+                }
+            ]
+        }
+    },
+    "page_contact": {
+        "title_page": "Liên hệ",
+        "description_page": "Liên hệ",
+        "keywords_page": "Liên hệ",
+        "link_css_page": [
+            "lib",
+            "fonts",
+            "contact"
+        ],
+        "link_js_page": [
+            "lib"
+        ],
+        "breadcrumb": {
+            "url_img": "images/banner/breadcrumb-1.jpg",
+            "menu": []
+        }
+    }
+}
