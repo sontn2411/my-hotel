@@ -7,63 +7,78 @@ import "swiper/css/navigation";
 import { EffectFade, Autoplay, Pagination, Navigation } from "swiper/modules";
 import PropTypes from "prop-types";
 import "../../scss/components/sliderCustom.scss";
-import { FaArrowRightLong } from "react-icons/fa6";
-import SlideItem from "./SlideItem";
+import { FaArrowRightLong ,FaArrowLeft } from "react-icons/fa6";
+import SlideContent from "./SlideContent";
+import SlideImage from "./SlideImage";
+;
 
+const SliderCustom = ({ data, mainTitle, leftContent }) => {
 
-const datas = [
-  {
-    id: 1,
-    title: "Không gian thoáng mát",
-    img: ["https://picsum.photos/id/237/800/600", "https://picsum.photos/id/239/800/600", "https://picsum.photos/id/240/800/600"],
-  },
-  {
-    id: 2,
-    title: "Dịch vụ chu đáo",
-    img: ["https://picsum.photos/id/241/800/600" , "https://picsum.photos/id/242/800/600" , "https://picsum.photos/id/243/800/600"],
-  },
-  {
-    id: 3,
-    title: "Tiện nghi và phòng tắm",
-    img: ["https://picsum.photos/id/244/800/600", "https://picsum.photos/id/245/800/600", "https://picsum.photos/id/246/800/600"],
-  },
-  {
-    id: 4,
-    title: "Phòng đơn trung cư",
-    img: ["https://picsum.photos/id/247/800/600", "https://picsum.photos/id/248/800/600", "https://picsum.photos/id/249/800/600"],
-  },
-]
-
-
-
-const SliderCustom = ({ data, mainTitle }) => {
-  
-
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const getRenderNextSlide = () => {
+    const nextIndex = (currentIndex + 1) % data.length;
+    const title = data[nextIndex].title;
+    const descSort = data[nextIndex].desc_sort;
+    return (
+      <div className="d-flex align-items-center btnNextContent">
+        <div className="d-flex flex-column">
+          <span className="fs-3">{title}</span>
+          <span>{descSort}</span>
+        </div>
+        <div className={`ps-3  fs-4 px-4`}>
+          {leftContent ? <FaArrowLeft /> : <FaArrowRightLong /> }
+          
+        </div>
+      </div>
+    );
+  };
+  const handleSlideChange = (swiper) => {
+    setCurrentIndex(swiper.realIndex);
+  };
 
   return (
     <>
-    <Swiper     effect={'fade'} navigation={true} modules={[Navigation , EffectFade]} className="mySwiper">
-        {datas.map( i =>{
-
-
+      <Swiper
+        effect={"fade"}
+        spaceBetween={30}
+        navigation={{
+          nextEl: ".customNext",
+        }}
+        pagination={{
+          clickable: true,
+          el: ".customPagination",
+          bulletClass: "customBullet",
+          bulletActiveClass: "customBulletActive",
+        }}
+        
+        modules={[Navigation, EffectFade, Pagination]}
+        className={`mySwiper ${leftContent ? "left" : ""}` }
+        onSlideChange={handleSlideChange}
+        loop={true}
+        // autoplay={{
+        //   delay: 5000,
+        //   disableOnInteraction: false,
+        // }}
+      >
+        {data.map((i) => {
           return (
-            <SwiperSlide key={i.id}>
-              <div className="row">
-                    <div className="col" style={{width: '500px' , height: '700px'}}>
-                        {/* <img src={i.img} alt="" />  */}
-                        <SlideItem data={i.img} />
-                    </div>
-
-                    <div className="col">
-                      <h3>{i.title}</h3>
-            
-                    </div>
+            <SwiperSlide className="mySwiperContent" key={i.id}>
+              <div className="bgSlide"></div>
+              <div className={`row flex-nowrap ${leftContent ? "flex-row-reverse" : ""}`} style={{gap: '2rem'}}>
+                <div className="col" style={{ width: "65%", height: "700px" }}>
+                  <SlideImage data={i.image} />
+                </div>
+                <div className={`col d-flex ${leftContent ? " justify-content-end " : "justify-content-start"}`} >
+                  <SlideContent data={i} mainTitle={mainTitle} />
+                </div>
               </div>
             </SwiperSlide>
-          )
+          );
         })}
-      </Swiper>
 
+      <div className="customPagination"></div>
+      <div className="customNext">{getRenderNextSlide()}</div>
+      </Swiper>
     </>
   );
 };
@@ -71,6 +86,7 @@ const SliderCustom = ({ data, mainTitle }) => {
 SliderCustom.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
   mainTitle: PropTypes.string.isRequired,
+  leftContent : PropTypes.bool.isRequired,
 };
 
 export default SliderCustom;

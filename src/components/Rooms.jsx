@@ -8,7 +8,10 @@ const Rooms = () => {
   return (
     <div className="wrapRoom">
       <div className="roomContainer">
-          <SliderCustom data={rooms}  mainTitle='Phòng nghỉ'/>
+          <SliderCustom data={rooms}  mainTitle='Phòng nghỉ 1'/>
+
+          <SliderCustom data={rooms}  mainTitle='Phòng nghỉ 2'  leftContent/>
+          
       </div>
     </div>
   );

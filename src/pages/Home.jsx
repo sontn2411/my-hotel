@@ -20,6 +20,8 @@ const Home = ()=>{
 
         {/* room */}
         <Rooms />
+
+        
       
         {/* footer */}
         {/* <Footer /> */}

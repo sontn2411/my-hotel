@@ -83,28 +83,28 @@
     {
       "id": 1,
       "title": "President Suite Sea View",
-      "image": ["src/assets/images/President Suite 6.jpg" ],
+      "image": ["https://picsum.photos/id/237/800/600", "https://picsum.photos/id/239/800/600", "https://picsum.photos/id/240/800/600"],
       "desc_sort": "Đón trọn hướng gió biển",
       "desc_long": "Đón trọn hướng gió biển với căn phòng có tầm nhìn bao trọn cả thành phố biển Nha Trang, tọa lạc tài tầng 20 của Adamas Boutique Hotel Nha Trang. Đây chính là một sự lựa chọn phù hợp cho những chuyến đi cùng gia đình nhưng lại muốn tận hưởng một không gian riêng với thiết kế 1 phòng khách, 1 bếp và 2 phòng ngủ. President Suite Sea Vierw là một sự kết hợp hoàn hảo giữa lối thiết kế hiện đại và sang trọng, mang đến những cảm xúc tuyệt với khi lưu trú tại đây."
     },
     {
       "id": 2,
       "title": "Studio Suite Sea View",
-      "image": ["src/assets/images/deluxe-city-view_6.jpg"],
+      "image": ["https://picsum.photos/id/241/800/600" , "https://picsum.photos/id/242/800/600" , "https://picsum.photos/id/243/800/600"],
       "desc_sort": "Đầy đủ tiện nghi",
       "desc_long": "Chính là lựa chọn lý tưởng cho kỳ nghỉ cùng bạn bè và người thương với hệ thống phòng cao cấp và đầy đủ tiện nghi, kèm theo tầm nhìn hướng biển Nha Trang thơ mộng. Đây sẽ là không gian tuyệt vời để bạn thư giãn và kiến tạo ra những kỷ niệm đẹp bên người thân yêu."
     },
     {
       "id": 3,
       "title": "Triple City View",
-      "image": ["src/assets/images/premier-sea_6.jpg"],
+      "image": ["https://picsum.photos/id/244/800/600", "https://picsum.photos/id/245/800/600", "https://picsum.photos/id/250/800/600"],
       "desc_sort": "Rộng rãi thoáng đãng",
       "desc_long": "Một chuyến du lịch chữa lành cùng bạn bè trong không gian rộng rãi thoáng đãng của hạng phòng Triple City View sẽ mang lại những trải nghiệm đáng nhớ và ý nghĩa. Với tầm nhìn toàn cảnh thành phố, đây chắc chắn là lựa chọn tuyệt vời cho những chuyến đi 3 người, nơi mọi người có thể cùng nhau chia sẻ những khoảnh khắc đặc biệt."
     },
     {
       "id": 4,
       "title": "Premier Sea View",
-      "image": ["src/assets/images/triple.jpg"],
+      "image": ["https://picsum.photos/id/247/800/600", "https://picsum.photos/id/248/800/600", "https://picsum.photos/id/249/800/600"],
       "desc_sort": "Thoải mái và hiện đại",
       "desc_long": "Một chuyến du lịch chữa lành cùng bạn bè trong không gian rộng rãi thoáng đãng của hạng phòng Triple City View sẽ mang lại những trải nghiệm đáng nhớ và ý nghĩa. Với tầm nhìn toàn cảnh thành phố, đây chắc chắn là lựa chọn tuyệt vời cho những chuyến đi 3 người, nơi mọi người có thể cùng nhau chia sẻ những khoảnh khắc đặc biệt."
     }
