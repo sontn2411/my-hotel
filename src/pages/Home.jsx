@@ -20,7 +20,7 @@ const Home = ()=>{
 
         {/* room */}
         <Rooms />
-        <div>Slidsadasdasd</div>
+      
         {/* footer */}
         {/* <Footer /> */}
 

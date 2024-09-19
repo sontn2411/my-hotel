@@ -1,6 +1,6 @@
 import "../scss/components/room.scss";
 import data from '../data/data.json';
-import SliderCustom from "./SlideCustom";
+import SliderCustom from "./slider/SlideCustom";
 
 const Rooms = () => {
   const { rooms } = data;
