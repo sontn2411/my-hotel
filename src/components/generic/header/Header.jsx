@@ -54,7 +54,6 @@ const Header = () => {
     };
   }, [isTabletOrMobile]);
 
-
   return (
     <div className="wrapHeader">
       <div className="headerContent">
@@ -111,7 +110,7 @@ const Header = () => {
               }`}
             >
               {isTabletOrMobile && <div onClick={handleShowMenu} className={`wrapMenuHeaderMobile ${isAnimationMenu ? "fadeInRight" : "fadeOutRight"}`}></div>}
-              <div className={`wrapMenuHeader ${isTabletOrMobile && (isAnimationMenu   ? "fadeInLeft" : "fadeOutLeft")  }  ${isFixed ? "fixed-top" : ""}`}>
+              <div className={`wrapMenuHeader ${isTabletOrMobile && (isAnimationMenu   ? "fadeInLeft" : "fadeOutLeft")  }  ${isFixed ? "fixed-top" : ""}`} style={{top: `${isFixed ? "7.1%" : "0"}` }}>
                 <Menu />
                 {isTabletOrMobile && (
                   <>

@@ -21,7 +21,7 @@ const MenuItems = ({ item }) => {
 
       {item.childrens &&
         (isTabletOrMobile ? (
-          <div className={`${showChilMenu ? "d-none" : "d-block"}`}> 
+          <div className={`${!showChilMenu ? "d-none" : "d-block"}`}> 
           <ul className="" >
               {item.childrens.map(subItem =>     <MenuItems key={subItem.id} item={subItem} /> )
               }
