@@ -12,7 +12,7 @@ const MenuItems = ({ item }) => {
 
   return (
     <li className={`itemMenuHeader ${item.childrens ? "menuSub" : ""}`}>
-      <a href="#" className="linkMenuHeader">
+      <a href="#" className="linkMenuHeader"  onClick={(e) => e.preventDefault()}>
         <span>{item.icon && <img src={item.icon} alt={item.name} />}</span>
         <span className=""> {item.name} </span>
 
