@@ -2,7 +2,7 @@ import Footer from "@/components/generic/Footer"
 import Header from "@/components/generic/header/Header"
 import Rooms from "@/components/Rooms"
 import Slider from "@/components/Slider"
-import data from '../data/data.json'
+
 
 
 const Home = ()=>{
@@ -19,10 +19,11 @@ const Home = ()=>{
             <Slider />
 
         {/* room */}
-        {/* <Rooms /> */}
-
+        <Rooms />
+        <div>Slidsadasdasd</div>
         {/* footer */}
         {/* <Footer /> */}
+
 
      
         </>

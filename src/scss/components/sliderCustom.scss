@@ -1,0 +1,143 @@
+.swiper-slide {
+    display: flex;
+    align-items: start;
+    // padding: 20px;
+    height: auto; 
+    img {
+    //   width: 60%;
+      width:  65%;;
+      height: 640px; 
+      object-fit: cover;
+    }
+
+    .sliderItemInfo {
+    
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start; 
+        width: 451px;
+      height: 100%; 
+      position: relative;
+        padding-top: 20px;
+      .infoMainTitle{
+        font-weight: bold;
+        font-size: 24px;
+        color : var(--color4) ;
+        font-size: 48px;
+        font-weight: 700;
+      }
+      .title{
+        font-size: 31px;
+        font-weight: 500;
+        color: var(--color4)
+      }
+      span {
+        display: block;
+        margin-bottom: 10px;
+        z-index: 99;
+      }
+      .desc_sort {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--color4);
+        position: relative;
+        padding-bottom: 20px;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 64px;
+            background-color: #764E2A;
+        }
+      }
+
+      .desc_long {
+        padding-top: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #1B0C08;
+        margin: 25px 0 0 0;
+        overflow: hidden;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        max-height: 204px;
+        line-height: 34px;
+        text-align: justify;
+        padding-bottom: 100px;
+      }
+    }
+  }
+
+
+
+// custom navigation
+  .customPagination {
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 22% !important;
+    z-index: 9;
+    display: block;
+  
+    .customBullet {
+      width: 8px;
+      height: 8px;
+      background-color: #ccc;
+      display: inline-block;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Thêm transition cho animation */
+      
+      &:hover {
+        background-color: #888;
+        transform: scale(1.2); 
+      }
+    }
+  
+    .customBulletActive {
+      background-color: var(--color4); 
+      width: 40px;
+      border-radius: 32px;
+      transition: background-color 0.3s ease, width 0.3s ease; 
+      animation: pulse 0.5s ease-in-out; 
+    }
+  }
+  
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+ .customNext {
+    position: absolute;
+    bottom: 0;
+    right: 0% !important;
+    z-index: 9;
+    max-width: 450px;
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    .btnNextContent{
+       background-color: var(--color4);
+       color: var(--color2);
+       padding : 20px;
+    }
+ }

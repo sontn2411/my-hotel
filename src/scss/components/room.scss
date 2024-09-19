@@ -1,24 +1,16 @@
 .wrapRoom {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0rem;
-}
+  margin-top: 50px;
+  .roomContainer {
 
-.roomContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
-  min-width: 1200px;
-}
-
-.roomItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .roomItemTitle {
-    font-size: 1.4rem;
-    margin-top: 1rem;
-    margin-bottom: -1.2rem;
   }
+}
+
+
+.bgItemInfo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }
