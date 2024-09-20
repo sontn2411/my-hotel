@@ -10,11 +10,15 @@ import "../../scss/components/sliderCustom.scss";
 import { FaArrowRightLong ,FaArrowLeft } from "react-icons/fa6";
 import SlideContent from "./SlideContent";
 import SlideImage from "./SlideImage";
+import { useMediaQuery } from "react-responsive";
 ;
 
 const SliderCustom = ({ data, mainTitle, leftContent }) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const isTabletOrMobile =  useMediaQuery({query : '(max-width:991px)'})
+
   const getRenderNextSlide = () => {
     const nextIndex = (currentIndex + 1) % data.length;
     const title = data[nextIndex].title;
@@ -26,7 +30,7 @@ const SliderCustom = ({ data, mainTitle, leftContent }) => {
           <span>{descSort}</span>
         </div>
         <div className={`ps-3  fs-4 px-4`}>
-          {leftContent ? <FaArrowLeft /> : <FaArrowRightLong /> }
+          {leftContent ?  isTabletOrMobile ? <FaArrowRightLong /> :<FaArrowLeft />  : <FaArrowRightLong /> }
           
         </div>
       </div>
@@ -64,8 +68,8 @@ const SliderCustom = ({ data, mainTitle, leftContent }) => {
           return (
             <SwiperSlide className="mySwiperContent" key={i.id}>
               <div className="bgSlide"></div>
-              <div className={`row flex-nowrap ${leftContent ? "flex-row-reverse" : ""}`} style={{gap: '2rem'}}>
-                <div className="col" style={{ width: "65%", height: "700px" }}>
+              <div className={`row ${isTabletOrMobile ? "" : "flex-nowrap"} ${leftContent ? "flex-row-reverse" : ""}`} style={{gap: '2rem'}}>
+                <div className="col-7" style={{ height: "550px" }}>
                   <SlideImage data={i.image} />
                 </div>
                 <div className={`col d-flex ${leftContent ? " justify-content-end " : "justify-content-start"}`} >

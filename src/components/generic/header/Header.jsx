@@ -110,7 +110,7 @@ const Header = () => {
               }`}
             >
               {isTabletOrMobile && <div onClick={handleShowMenu} className={`wrapMenuHeaderMobile ${isAnimationMenu ? "fadeInRight" : "fadeOutRight"}`}></div>}
-              <div className={`wrapMenuHeader ${isTabletOrMobile && (isAnimationMenu   ? "fadeInLeft" : "fadeOutLeft")  }  ${isFixed ? "fixed-top" : ""}`} style={{top: `${isTabletOrMobile &&  isFixed ? "7.1%" : "0"}` }}>
+              <div className={`wrapMenuHeader ${isTabletOrMobile && (isAnimationMenu   ? "fadeInLeft" : "fadeOutLeft")  }  ${isFixed ? "fixed-top" : ""}`} style={{top: `${isTabletOrMobile &&  isFixed ? "9.2%" : "0"}` }}>
                 <Menu />
                 {isTabletOrMobile && (
                   <>
